@@ -10,33 +10,18 @@
             </div>
         </div>
         <div class="row">
+            {% for card in services_card%}
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="single-service service-2">
                     <div class="icon">
-                        <i class="fas fa-pencil-ruler"></i>
+                        <i class="fas {{card.icon}}"></i>
                     </div>
-                    <h3>Creative Design</h3>
-                    <p>Maborisum ipsum dosea ilelite consec Maborisum iesumdolor anim id est laborum</p>                        
+                    <h3>{{card.title}}</h3>
+                    <p>{{card.text|safe}}</p>                        
                 </div>
             </div> <!-- /.single-service -->
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="single-service service-2">
-                    <div class="icon">
-                        <i class="fal fa-bullseye-arrow"></i>
-                    </div>
-                    <h3>Digital Marketing</h3>
-                    <p>Maborisum ipsum dosea ilelite consec Maborisum iesumdolor anim id est laborum</p>                        
-                </div>
-            </div> <!-- /.single-service -->
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="single-service service-2">
-                    <div class="icon">
-                        <i class="fal fa-laptop-code"></i>
-                    </div>
-                    <h3>Web Coding</h3>
-                    <p>Maborisum ipsum dosea ilelite consec Maborisum iesumdolor anim id est laborum</p>                        
-                </div>
-            </div> <!-- /.single-service -->
+            {% endfor %}
+            
         </div>
         <div class="contact-promo text-center">
             Have any Work? Fell Free to -  <a href="#contact">Contact Me</a>

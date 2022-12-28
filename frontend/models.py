@@ -33,8 +33,10 @@ class Block(models.Model):
     text = models.TextField(blank=True)
     description = models.TextField(blank=True)
     image = models.ImageField(upload_to='block/images/', blank=True, null=True)
+    icon = models.CharField(max_length=50, blank=True, null=True)
     link = models.URLField(blank=True)
     active = models.BooleanField(default=True)
+    hierarchy = models.IntegerField(blank=True,default=1)
     date = models.DateField(auto_now=True)
     sub_category = models.ManyToManyField("SubCategory", related_name=("blocks"))
 

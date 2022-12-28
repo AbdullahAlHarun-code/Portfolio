@@ -96,11 +96,11 @@
                 <div class="col-lg-5 col-sm-12 text-center text-lg-left">
                     <div class="hero-content">
                         <span class="hello-tooltip">Hi! There</span>
-                        <h1>John William</h1>
+                        <h1>{{ section_one.title }}</h1>
                         <div class="typed">
                            <h3>I'm a <span class="profession"></span></h3>
                         </div>
-                        <p>Maborisum ipsum dolor seat ameat consecteturetel seat more be elite consecteture.</p>
+                        <p>{{ section_one.para }}</p>
                         <a href="#" class="theme-btn">+ Download CV</a>
 
                         <div class="social-profile">
@@ -112,7 +112,7 @@
                 </div>
                 <div class="col-lg-6 offset-lg-1 col-sm-12 text-center">
                     <div class="hero-profile-img">
-                        <img src="{% static 'assets/img/profile.png' %}" alt="Spruce" class="img-fluid">
+                        <img src="/media/{{ section_one.image }}" alt="Spruce" class="img-fluid">
                     </div>
                 </div>
             </div>
