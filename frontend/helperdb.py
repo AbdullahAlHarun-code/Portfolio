@@ -3,6 +3,20 @@ from .models import (
     SubCategory, 
     Block)
 
+class About:
+
+    def __init__(self):
+        self.title = ''
+        self.sub_title = ''
+        self.image = ''
+        self.generatValue()
+    def generatValue(self):
+        blocks = Block.objects.filter(active=True, sub_category__parent_category__name='about').order_by('hierarchy')
+        self.title = blocks.filter(sub_category__name='intro').first().title
+        self.sub_title = blocks.filter(sub_category__name='intro').first().text
+        self.image = blocks.filter(sub_category__name='image').first().image
+
+
 class DefaultInfo:
 
     def __init__(self):

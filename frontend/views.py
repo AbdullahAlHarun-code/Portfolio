@@ -9,6 +9,7 @@ from .helperdb import (
     PersonalInfo,
     SectionOne,
     DefaultInfo,
+    About,
     )
 # Create your views here.
 
@@ -23,12 +24,14 @@ def home(request):
     personal_info = PersonalInfo()
     section_one = SectionOne()
     default_info =DefaultInfo()
+    about = About()
    
     context = {
         'category':categories,
         'services_card':services_card,
         'personal_info': personal_info,
         'section_one': SectionOne,
-        'default_info': default_info
+        'default_info': default_info,
+        'about': about,
         }
     return render(request, template_name, context)

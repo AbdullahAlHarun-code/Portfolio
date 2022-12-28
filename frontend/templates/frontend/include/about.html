@@ -4,15 +4,15 @@
         <div class="row">
             <div class="col-12 text-center col-lg-10 offset-lg-1">
                 <div class="section-title-two">
-                    <h2>About Me</h2>
-                    <p>Freelance Graphic & Web Designer</p>
+                    <h2>{{ about.title}}</h2>
+                    <p>{{ about.sub_title}}</p>
                 </div>
             </div>
          </div>
         <div class="row align-items-center">
             <div class="col-lg-5 col-12">
                  <div class="main-profile-img">
-                    <img src="{% static 'assets/img/main_profile.png' %}" alt="profile image">
+                    <img src="/media/{{ about.image }}" alt="profile image">
                 </div>
             </div>
             <div class="col-lg-6 offset-lg-1 col-12">
