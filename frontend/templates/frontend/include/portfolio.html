@@ -1,0 +1,75 @@
+{% load static %}
+<section class="portfolio-showcase  style-2 section-padding pt-0" id='portfolio'>
+    <div class="container">
+      <div class="row">
+         <div class="col-12 text-center col-lg-10 offset-lg-1">
+             <div class="section-title-two">
+                 <h2>My portfolio</h2>
+                 <p>ntsWhat’s Services I’ll Provide For Clients</p>
+             </div>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-md-12 text-center">
+             <div class="portfolio-filter mt-4 mt-sm-5">
+                 <button data-filter="*" class="active">All</button>
+                 <button data-filter=".wordpress">WordPress</button>
+                 <button data-filter=".branding">Branding</button>
+                 <button data-filter=".website">Web Design</button>
+                 <button data-filter=".app">App Design</button>
+             </div>
+         </div>
+     </div>
+     <div class="row grid p-0">
+         <div class="col-lg-4 col-md-6 col-12 grid-item branding">
+             <div class="single-portfolio-item">
+                 <a href="{% static 'assets/img/portfolio/1.jpg' %}" class="popup-gallery">
+                     <img class="img-fluid" src="{% static 'assets/img/portfolio/1.jpg' %}" alt="">
+                     <span class="zoom-icon">+</span>
+                 </a>
+             </div>
+         </div>
+         <div class="col-lg-4 col-md-6 col-12 grid-item wordpress website app">
+             <div class="single-portfolio-item">
+                 <a href="{% static 'assets/img/portfolio/web1.jpg' %}" class="popup-gallery">
+                     <img class="img-fluid" src="{% static 'assets/img/portfolio/web1.jpg' %}" alt="">
+                     <span class="zoom-icon">+</span>
+                 </a>
+             </div>
+         </div>
+         <div class="col-lg-4 col-md-6 col-12 grid-item branding">
+             <div class="single-portfolio-item">
+                 <a href="{% static 'assets/img/portfolio/4.jpg' %}" class="popup-gallery">
+                     <img class="img-fluid" src="{% static 'assets/img/portfolio/4.jpg' %}" alt="">
+                     <span class="zoom-icon">+</span>
+                 </a>
+             </div>
+         </div>
+         <div class="col-lg-4 col-md-6 col-12 grid-item branding app">
+             <div class="single-portfolio-item">
+                 <a href="{% static 'assets/img/portfolio/5.jpg' %}" class="popup-gallery">
+                     <img class="img-fluid" src="{% static 'assets/img/portfolio/5.jpg' %}" alt="">
+                     <span class="zoom-icon">+</span>
+                 </a>
+             </div>
+         </div>            
+         <div class="col-lg-4 col-md-6 col-12 grid-item wordpress">
+             <div class="single-portfolio-item">
+                 <a href="{% static 'assets/img/portfolio/6.jpg' %}" class="popup-gallery">
+                     <img class="img-fluid" src="{% static 'assets/img/portfolio/6.jpg' %}" alt="">
+                     <span class="zoom-icon">+</span>
+                 </a>
+             </div>
+         </div>
+         <div class="col-lg-4 col-md-6 col-12 grid-item wordpress website">
+            <div class="single-portfolio-item">
+                <a href="{% static 'assets/img/portfolio/web2.jpg' %}" class="popup-gallery">
+                    <img class="img-fluid" src="{% static 'assets/img/portfolio/web2.jpg' %}" alt="">
+                    <span class="zoom-icon">+</span>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+ </section>

@@ -1,0 +1,232 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="keendevs">
+    <!-- ======== Page title ============ -->
+    <title>SPRUCE - Portfolio HTML Template</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}">
+    <!-- ===========  All Stylesheet ================= -->
+    <!--  Icon css plugins -->
+    <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}">
+    <!--  animate css plugins -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!--  magnific-popup css plugins -->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!--  owl carosuel css plugins -->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <!-- metisMenu css file -->
+    <link rel="stylesheet" href="{% static 'assets/css/metismenu.css' %}">
+    <!-- progresscircle css file -->
+    <link rel="stylesheet" href="{% static 'assets/css/progresscircle.css' %}">
+    <!--  owl theme css plugins -->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.css' %}">
+    <!--  Bootstrap css plugins -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!--  main style css file -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <!-- template main style css file -->
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text-preloader="S" class="letters-loading">
+                        S
+                    </span>
+                    <span data-text-preloader="P" class="letters-loading">
+                        P
+                    </span>
+                    <span data-text-preloader="R" class="letters-loading">
+                        R
+                    </span>
+                    <span data-text-preloader="U" class="letters-loading">
+                        U
+                    </span>
+                    <span data-text-preloader="C" class="letters-loading">
+                        C
+                    </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about-me section -->
+    {% include './include/navbar.html'%}
+
+    <section class="hero-section hero-1" style="background-image: url('{% static 'assets/img/hero_bg_element.png' %}')">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-sm-12 text-center text-lg-left">
+                    <div class="hero-content">
+                        <span class="hello-tooltip">Hi! There</span>
+                        <h1>John William</h1>
+                        <div class="typed">
+                           <h3>I'm a <span class="profession"></span></h3>
+                        </div>
+                        <p>Maborisum ipsum dolor seat ameat consecteturetel seat more be elite consecteture.</p>
+                        <a href="#" class="theme-btn">+ Download CV</a>
+
+                        <div class="social-profile">
+                            <a href="#"><i class="fal fa-plus"></i>facebook</a>
+                            <a href="#"><i class="fal fa-plus"></i>twitter</a>
+                            <a href="#"><i class="fal fa-plus"></i>linkedin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 col-sm-12 text-center">
+                    <div class="hero-profile-img">
+                        <img src="{% static 'assets/img/profile.png' %}" alt="Spruce" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- achivements section -->
+    <section class="achivements-section">
+        <div class="container">
+            <div class="border-theme">
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1 achivements-area">                    
+                        <div class="single-achivement">
+                            <div class="icon">
+                            <img src="{% static 'assets/img/icons/start-up.png' %}" alt="">
+                            </div>
+                            <div class="achive-heading">
+                                <h3>Top Rated</h3>
+                                <span>Worldcalss UI-UX</span>
+                            </div>
+                        </div> <!-- single-achivement -->
+                        <div class="single-achivement">
+                            <div class="icon">
+                            <img src="{% static 'assets/img/icons/client.png' %}" alt="">
+                            </div>
+                            <div class="achive-heading">
+                                <h3>500+</h3>
+                                <span>Satisfied Clients</span>
+                            </div>
+                        </div> <!-- single-achivement -->
+                        <div class="single-achivement">
+                            <div class="icon">
+                            <img src="{% static 'assets/img/icons/career.png' %}" alt="">
+                            </div>
+                            <div class="achive-heading">
+                                <h3>10 YEARS</h3>
+                                <span>Experienced Designer</span>
+                            </div>
+                        </div> <!-- single-achivement -->                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- about-me section -->
+    {% include './include/about.html'%}
+
+    <!-- service section -->
+    {% include './include/services.html'%}
+
+    <!-- resume section -->
+    {% include './include/resume.html'%}
+   
+    
+    
+    <!-- portfolio section -->
+    {% include './include/portfolio.html'%}
+    
+
+    <!-- testimonial section -->
+    {% include './include/testimonial.html'%}
+    
+
+    <!-- blog section -->
+    {% include './include/blog.html'%}
+    
+    <!-- contact section -->
+    {% include './include/contact.html'%}
+
+    
+    <!-- blog section -->
+    
+
+    <footer class="footer-one text-white footer_white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    &copy; 2020 Copyright Reserved - <a href="#">Modina Theme</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--  ALl JS Plugins
+    ====================================== -->
+    <script src="{% static 'assets/js/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'assets/js/modernizr-3.7.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/imageload.min.js' %}"></script>
+    <script src="{% static 'assets/js/scrollUp.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoint.js' %}"></script>
+    <script src="{% static 'assets/js/counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/typed.min.js' %}"></script>
+    <script src="{% static 'assets/js/metismenu.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/progresscircle.js' %}"></script>
+    <script src="{% static 'assets/js/barfiller.js' %}"></script>
+    <script src="{% static 'assets/js/ajax-mail.js' %}"></script>
+    <script>
+    let typed = new Typed('.profession', {
+        strings: ["Freelance Developer", "UI Designer"],
+        typeSpeed: 80,
+        loop: true,
+        startDelay: 200,
+        backSpeed: 50,
+    });
+    </script>
+    <script src="{% static 'assets/js/active.js' %}"></script>
+</body>
+
+</html>
