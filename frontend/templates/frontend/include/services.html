@@ -4,19 +4,19 @@
         <div class="row">
             <div class="col-12 text-center col-lg-10 offset-lg-1">
                 <div class="section-title-two">
-                    <h2>My Services</h2>
-                    <p>What’s Services I’ll Provide For Clients</p>
+                    <h2>{{ services.title }}</h2>
+                    <p>{{ services.sub_title }}</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            {% for card in services_card%}
+            {% for card in services.card %}
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="single-service service-2">
                     <div class="icon">
                         <i class="fas {{card.icon}}"></i>
                     </div>
-                    <h3>{{card.title}}</h3>
+                    <h3>{{card.title|title }}</h3>
                     <p>{{card.text|safe}}</p>                        
                 </div>
             </div> <!-- /.single-service -->
@@ -24,7 +24,7 @@
             
         </div>
         <div class="contact-promo text-center">
-            Have any Work? Fell Free to -  <a href="#contact">Contact Me</a>
+            {{ services.footer_text }} -  <a href="#contact">Contact Me</a>
         </div>
     </div>
 </section>

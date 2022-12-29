@@ -17,26 +17,14 @@
             </div>
             <div class="col-lg-6 offset-lg-1 col-12">
                 <div class="about-content">
-                    <h1>{{ personal_info.name }}</h1>
-                    <h5>Freelance Designer & Developer</h5>
-                    <p>Maborisum ipsum dolor seat ameat consecteturerslmore il elite consecteture.Contrary to populabelief, Lorem Ipsum is notil sirand. It’s more consecteture elite.</p>
+                    <h1>{{ about.another_intro_title }}</h1>
+                    <h5>{{ about.another_intro_sub_title }}</h5>
+                    <p>{{ about.another_para }}</p>
 
                     <div class="row mt-5">
                         <div class="personal-info col-12 row">
-                            <div class="data heading col-4">
-                                <p>Birthday</p>
-                                <p>Age</p>
-                                <p>Email</p>
-                                <p>Address</p>
-                                <p>Phone</p>
-                            </div>
-                            <div class="data col-6">
-                                <p>14 July, 1990</p>
-                                <p>30 Year</p>
-                                <p>example@mail.com</p>
-                                <p>Torento, Canada</p>
-                                <p>+090- 12345- 7890</p>
-                            </div>
+                            {{ about.frontend_backend|safe }}
+                            
                         </div>
                     </div>
 
