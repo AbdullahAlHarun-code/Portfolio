@@ -19,67 +19,41 @@
                          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <a class="nav-link active" id="v-pills-edu-tab" data-toggle="pill" href="#v-pills-edu" role="tab" aria-controls="v-pills-edu" aria-selected="true">Education</a>
                             <a class="nav-link" id="v-pills-job-tab" data-toggle="pill" href="#v-pills-job" role="tab" aria-controls="v-pills-job" aria-selected="false">Experience</a>
-                            <a class="nav-link" id="v-pills-awards-tab" data-toggle="pill" href="#v-pills-awards" role="tab" aria-controls="v-pills-awards" aria-selected="false">Awards</a>
+                            {% comment %} <a class="nav-link" id="v-pills-awards-tab" data-toggle="pill" href="#v-pills-awards" role="tab" aria-controls="v-pills-awards" aria-selected="false">Awards</a> {% endcomment %}
                          </div>
                       </div>
 
                       <div class="col-sm-9">
                          <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-edu" role="tabpanel" aria-labelledby="v-pills-edu-tab">
+                                {% for education in resume_education %}
                                 <div class="single-resume-item">
                                     <div class="year">
-                                        <span>2002-2006</span>
+                                        <span>{{ education.icon}}</span>
                                     </div>
-                                    <h3>Graphic Design</h3>
-                                    <h5>Springlean Graphic University</h5>
-                                    <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.</p>
+                                    <h3>{{ education.title}}</h3>
+                                    <h5>{{ education.text}}</h5>
+                                    <p>{{ education.description}}</p>
                                 </div>
-                                <div class="single-resume-item">
-                                    <div class="year">
-                                        <span>2008-20011</span>
-                                    </div>
-                                    <h3>Frontend Development</h3>
-                                    <h5>University of Udemy</h5>
-                                    <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in.</p>
-                                </div>
-                                <div class="single-resume-item">
-                                    <div class="year">
-                                        <span>20015-2020</span>
-                                    </div>
-                                    <h3>B.Sc. in Computer Science & Engineering</h3>
-                                    <h5>Daffodil International University</h5>
-                                    <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.</p>
-                                </div>
+                                {% endfor %}
+                                
                             </div>
 
                             <div class="tab-pane fade" id="v-pills-job" role="tabpanel" aria-labelledby="v-pills-job-tab">
+                                {% for experience in resume_experience%}
                               <div class="single-resume-item">
                                   <div class="year">
-                                      <span>2008-2011</span>
+                                      <span>{{ experience.icon }}</span>
                                   </div>
-                                  <h3>Junior Ui/Ux Designer</h3>
-                                  <h5>ITTALKBD</h5>
-                                  <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.</p>
+                                  <h3>{{ experience.title }}</h3>
+                                  <h5>{{ experience.text }}</h5>
+                                  <p>{{ experience.description }}</p>
                               </div>
-                              <div class="single-resume-item">
-                                  <div class="year">
-                                      <span>2014-2019</span>
-                                  </div>
-                                  <h3>WordPress Developer</h3>
-                                  <h5>Fiveer</h5>
-                                  <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.</p>
-                              </div>
-                              <div class="single-resume-item">
-                                  <div class="year">
-                                      <span>2019-Current</span>
-                                  </div>
-                                  <h3>Full Stack Developer</h3>
-                                  <h5>KeenDevs</h5>
-                                  <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.</p>
-                              </div>
+                              {% endfor %}
+                              
                             </div>
 
-                            <div class="tab-pane fade" id="v-pills-awards" role="tabpanel" aria-labelledby="v-pills-awards-tab">
+                            {% comment %} <div class="tab-pane fade" id="v-pills-awards" role="tabpanel" aria-labelledby="v-pills-awards-tab">
                               <div class="single-resume-item">
                                   <div class="year">
                                       <span>2015</span>
@@ -104,7 +78,7 @@
                                   <h5>Basic IT Awarads - 2020</h5>
                                   <p>Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin vitae nulla tristique, ornare felis id, congue libero. Nam volutpat euismod quam.</p>
                               </div>
-                            </div>
+                            </div> {% endcomment %}
                          </div>
                       </div>
                    </div>
