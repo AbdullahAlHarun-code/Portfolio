@@ -1,0 +1,27 @@
+	resume
+	about
+	services
+	portfolio section
+	default info
+	section 2
+	personal info
+	section 1
+
+
+    experience	resume
+	education	resume
+	services text	services
+	frontend and backend	about
+	favicon	default info
+	another intro	about
+	image	about
+	intro	about
+	logo	default info
+	section 1 title and subtitle	section 1
+	services section card	services
+	name	personal info
+	image	default info
+	title	section 1 | section 2
+	email	personal info
+	address	personal info
+	phone number

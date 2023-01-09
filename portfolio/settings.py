@@ -80,6 +80,20 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+#rmmpkydv_admin
+#rmmpkydv_portfolio
+#66.29.132.10
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'rmmpkydv_portfolio',
+#         'HOST': '66.29.132.10',
+#         'PORT': '3306',
+#         'USER': 'rmmpkydv_admin',
+#         'PASSWORD': 'Zee9_.ie',
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
